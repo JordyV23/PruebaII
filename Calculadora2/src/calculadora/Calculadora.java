@@ -80,7 +80,7 @@ public class Calculadora {
            this.separar(Campo, "X");
            //Multiplicar
             System.out.println("Multiplicar: " + val1 +" X "+val2);
-            this.multiplicar(Campo);
+            this.Multiplicar(Campo);
         }
     }
 
@@ -96,7 +96,7 @@ public class Calculadora {
 
     public void dividir(JTextField Campo) {
         if(this.val1.equals("0") || this.val2.equals("0")){
-            this.escribir(Campo,"Error")
+            this.escribir(Campo,"Error");
         } else {
             try{
                 resultado= Double.parseDouble(val1) /Double.parseDouble(val2);
